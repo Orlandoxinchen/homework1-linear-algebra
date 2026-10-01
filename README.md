@@ -217,7 +217,7 @@ $$
 Because $R_3=2R_1+R_2$, the three rows are linearly dependent. The first two rows are independent, so
 
 $$
-\boxed{\operatorname{rank}(C)=2}.
+\boxed{\mathrm{rank}(C)=2}.
 $$
 
 The rank tells us that only two rows (and two columns) provide independent information. The matrix maps vectors into a two-dimensional subspace and is singular, consistent with its zero determinant.
