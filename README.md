@@ -153,7 +153,7 @@ Since $\det(A)=2(-1)-1(3)=-5\ne0$,
 
 $$
 A^{-1}=\frac{1}{-5}\begin{bmatrix}-1&-1\\-3&2\end{bmatrix}
-=\begin{bmatrix}\frac15&\frac15\\\frac35&-\frac25\end{bmatrix}.
+=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}.
 $$
 
 Therefore,
@@ -161,9 +161,9 @@ Therefore,
 $$
 \begin{bmatrix}x\\y\end{bmatrix}
 =A^{-1}\mathbf b
-=\begin{bmatrix}\frac15&\frac15\\\frac35&-\frac25\end{bmatrix}
+=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}
 \begin{bmatrix}5\\4\end{bmatrix}
-=\boxed{\begin{bmatrix}\frac95\\\frac75\end{bmatrix}},
+=\boxed{\begin{bmatrix}\frac{9}{5}\\\frac{7}{5}\end{bmatrix}},
 $$
 
 so $\boxed{(x,y)=(1.8,1.4)}$.
