@@ -1,6 +1,6 @@
 # Homework 1 — Matrix Algebra
 
-**Student:** Xinchen Leng  
+**Student:** Xinchen Leng<br>
 **Date:** September 29, 2026
 
 This page presents the complete manual solutions and required NumPy verification code. The formatted submission is available as [Homework_1_Solutions.pdf](./Homework_1_Solutions.pdf).
