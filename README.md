@@ -14,38 +14,38 @@ This page presents the complete manual solutions and required NumPy verification
 Given
 
 $$
-A=\begin{bmatrix}1&2\\3&4\end{bmatrix},\qquad
-B=\begin{bmatrix}2&0\\1&2\end{bmatrix}.
+A=\begin{bmatrix}1&2\\\\3&4\end{bmatrix},\qquad
+B=\begin{bmatrix}2&0\\\\1&2\end{bmatrix}.
 $$
 
 ### (a) Addition and subtraction
 
 $$
-A+B=\begin{bmatrix}1+2&2+0\\3+1&4+2\end{bmatrix}
-=\boxed{\begin{bmatrix}3&2\\4&6\end{bmatrix}}
+A+B=\begin{bmatrix}1+2&2+0\\\\3+1&4+2\end{bmatrix}
+=\boxed{\begin{bmatrix}3&2\\\\4&6\end{bmatrix}}
 $$
 
 $$
-A-B=\begin{bmatrix}1-2&2-0\\3-1&4-2\end{bmatrix}
-=\boxed{\begin{bmatrix}-1&2\\2&2\end{bmatrix}}
+A-B=\begin{bmatrix}1-2&2-0\\\\3-1&4-2\end{bmatrix}
+=\boxed{\begin{bmatrix}-1&2\\\\2&2\end{bmatrix}}
 $$
 
 ### (b) Scalar multiplication
 
 $$
-2A=\boxed{\begin{bmatrix}2&4\\6&8\end{bmatrix}}
+2A=\boxed{\begin{bmatrix}2&4\\\\6&8\end{bmatrix}}
 $$
 
 ### (c) Matrix products
 
 $$
-AB=\begin{bmatrix}1(2)+2(1)&1(0)+2(2)\\3(2)+4(1)&3(0)+4(2)\end{bmatrix}
-=\boxed{\begin{bmatrix}4&4\\10&8\end{bmatrix}}
+AB=\begin{bmatrix}1(2)+2(1)&1(0)+2(2)\\\\3(2)+4(1)&3(0)+4(2)\end{bmatrix}
+=\boxed{\begin{bmatrix}4&4\\\\10&8\end{bmatrix}}
 $$
 
 $$
-BA=\begin{bmatrix}2(1)+0(3)&2(2)+0(4)\\1(1)+2(3)&1(2)+2(4)\end{bmatrix}
-=\boxed{\begin{bmatrix}2&4\\7&10\end{bmatrix}}
+BA=\begin{bmatrix}2(1)+0(3)&2(2)+0(4)\\\\1(1)+2(3)&1(2)+2(4)\end{bmatrix}
+=\boxed{\begin{bmatrix}2&4\\\\7&10\end{bmatrix}}
 $$
 
 Therefore, $AB\ne BA$. Matrix multiplication is generally not commutative: changing the order changes which rows are combined with which columns.
@@ -93,8 +93,8 @@ AB equals BA: False
 
 $$
 \begin{bmatrix}
-3 & 0 & 0 \\
-0 & -2 & 0 \\
+3 & 0 & 0 \\\\
+0 & -2 & 0 \\\\
 0 & 0 & 5
 \end{bmatrix}
 $$
@@ -106,7 +106,7 @@ All off-diagonal entries are zero.
 $$
 I_2=
 \begin{bmatrix}
-1 & 0 \\
+1 & 0 \\\\
 0 & 1
 \end{bmatrix}
 $$
@@ -118,7 +118,7 @@ It satisfies $I_2A=AI_2=A$ for every compatible matrix $A$.
 $$
 S=
 \begin{bmatrix}
-2 & -1 \\
+2 & -1 \\\\
 -1 & 4
 \end{bmatrix}
 $$
@@ -130,7 +130,7 @@ It is symmetric because $S^T=S$.
 $$
 P=
 \begin{bmatrix}
-1 & 0 \\
+1 & 0 \\\\
 0 & 0
 \end{bmatrix}
 $$
@@ -144,26 +144,26 @@ It is idempotent because $P^2=P$.
 The system $2x+y=5$ and $3x-y=4$ has matrix form
 
 $$
-\underbrace{\begin{bmatrix}2&1\\3&-1\end{bmatrix}}_{A}
-\underbrace{\begin{bmatrix}x\\y\end{bmatrix}}_{\mathbf{x}}
-=\underbrace{\begin{bmatrix}5\\4\end{bmatrix}}_{\mathbf{b}}.
+\underbrace{\begin{bmatrix}2&1\\\\3&-1\end{bmatrix}}_{A}
+\underbrace{\begin{bmatrix}x\\\\y\end{bmatrix}}_{\mathbf{x}}
+=\underbrace{\begin{bmatrix}5\\\\4\end{bmatrix}}_{\mathbf{b}}.
 $$
 
 Since $\det(A)=2(-1)-1(3)=-5\ne0$,
 
 $$
-A^{-1}=\frac{1}{-5}\begin{bmatrix}-1&-1\\-3&2\end{bmatrix}
-=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}.
+A^{-1}=\frac{1}{-5}\begin{bmatrix}-1&-1\\\\-3&2\end{bmatrix}
+=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}.
 $$
 
 Therefore,
 
 $$
-\begin{bmatrix}x\\y\end{bmatrix}
+\begin{bmatrix}x\\\\y\end{bmatrix}
 =A^{-1}\mathbf b
-=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}
-\begin{bmatrix}5\\4\end{bmatrix}
-=\boxed{\begin{bmatrix}\frac{9}{5}\\\frac{7}{5}\end{bmatrix}},
+=\begin{bmatrix}\frac{1}{5}&\frac{1}{5}\\\\\frac{3}{5}&-\frac{2}{5}\end{bmatrix}
+\begin{bmatrix}5\\\\4\end{bmatrix}
+=\boxed{\begin{bmatrix}\frac{9}{5}\\\\\frac{7}{5}\end{bmatrix}},
 $$
 
 so $\boxed{(x,y)=(1.8,1.4)}$.
@@ -199,7 +199,7 @@ Check A @ solution = [5. 4.]
 Given
 
 $$
-C=\begin{bmatrix}1&2&3\\1&1&1\\3&5&7\end{bmatrix},
+C=\begin{bmatrix}1&2&3\\\\1&1&1\\\\3&5&7\end{bmatrix},
 $$
 
 cofactor expansion along the first row gives
@@ -207,9 +207,9 @@ cofactor expansion along the first row gives
 $$
 \begin{aligned}
 \det(C)
-&=1\begin{vmatrix}1&1\\5&7\end{vmatrix}
--2\begin{vmatrix}1&1\\3&7\end{vmatrix}
-+3\begin{vmatrix}1&1\\3&5\end{vmatrix}\\
+&=1\begin{vmatrix}1&1\\\\5&7\end{vmatrix}
+-2\begin{vmatrix}1&1\\\\3&7\end{vmatrix}
++3\begin{vmatrix}1&1\\\\3&5\end{vmatrix}\\\\
 &=(7-5)-2(7-3)+3(5-3)=2-8+6=\boxed{0}.
 \end{aligned}
 $$
@@ -253,19 +253,19 @@ Row 3 equals 2*Row 1 + Row 2: True
 Given
 
 $$
-D=\begin{bmatrix}2&1&0\\1&1&1\\0&1&1\end{bmatrix},
+D=\begin{bmatrix}2&1&0\\\\1&1&1\\\\0&1&1\end{bmatrix},
 $$
 
 $\det(D)=-1$, so $D$ is invertible. Row reduction of $[D\mid I]$ (or the adjugate formula) gives
 
 $$
-\boxed{D^{-1}=\begin{bmatrix}0&1&-1\\1&-2&2\\-1&2&-1\end{bmatrix}}.
+\boxed{D^{-1}=\begin{bmatrix}0&1&-1\\\\1&-2&2\\\\-1&2&-1\end{bmatrix}}.
 $$
 
 Indeed,
 
 $$
-DD^{-1}=\begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix}=I_3.
+DD^{-1}=\begin{bmatrix}1&0&0\\\\0&1&0\\\\0&0&1\end{bmatrix}=I_3.
 $$
 
 ### NumPy verification
