@@ -89,12 +89,53 @@ AB equals BA: False
 
 ## 2. Properties of Special Matrices
 
-| Matrix type | Example | Defining property |
-|---|---|---|
-| Diagonal | $\begin{bmatrix}3&0&0\\0&-2&0\\0&0&5\end{bmatrix}$ | All off-diagonal entries are zero. |
-| Identity | $\begin{bmatrix}1&0\\0&1\end{bmatrix}$ | $IA=AI=A$. |
-| Symmetric | $\begin{bmatrix}2&-1\\-1&4\end{bmatrix}$ | $S^T=S$. |
-| Idempotent | $\begin{bmatrix}1&0\\0&0\end{bmatrix}$ | $P^2=P$. |
+### 2.1 Diagonal matrix
+
+$$
+\begin{bmatrix}
+3 & 0 & 0 \\
+0 & -2 & 0 \\
+0 & 0 & 5
+\end{bmatrix}
+$$
+
+All off-diagonal entries are zero.
+
+### 2.2 Identity matrix
+
+$$
+I_2=
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+
+It satisfies $I_2A=AI_2=A$ for every compatible matrix $A$.
+
+### 2.3 Symmetric matrix
+
+$$
+S=
+\begin{bmatrix}
+2 & -1 \\
+-1 & 4
+\end{bmatrix}
+$$
+
+It is symmetric because $S^T=S$.
+
+### 2.4 Idempotent matrix
+
+$$
+P=
+\begin{bmatrix}
+1 & 0 \\
+0 & 0
+\end{bmatrix}
+$$
+
+It is idempotent because $P^2=P$.
 
 ---
 
